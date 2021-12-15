@@ -1,0 +1,10 @@
+# Basic
+- 经典二分查找 [Classical Binary Search](https://www.lintcode.com/problem/457/)   
+- 第一个目标 [First Position of Target](https://www.lintcode.com/problem/14/)   
+- 最后一个目标 [Last Position of Target](https://www.lintcode.com/problem/458/)   
+- 超大数组第一个目标 [Search In a Big Sorted Array](https://www.lintcode.com/problem/447/)   
+- 最近的k个数 [Find K Closest Elements](https://www.lintcode.com/problem/460/)  
+- 山脉最大值 [Maximum Number in Mountain Sequence](https://www.lintcode.com/problem/585/)   
+- 旋转数组最小值 [Find Minimum in Rotated Sorted Array](https://www.lintcode.com/problem/159/)   
+- 旋转数组目标值 [Search in Rotated Sorted Array](https://www.lintcode.com/problem/62/)   
+- 任意峰值 [Find Peak Element](https://www.lintcode.com/problem/75/)   
