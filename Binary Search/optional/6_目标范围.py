@@ -1,4 +1,4 @@
-﻿# Search in a Sorted Array of Unknown Size
+﻿# Search for a Range
 
 """
 思路：找第一个+找最后一个
