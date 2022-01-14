@@ -28,7 +28,7 @@ class Solution:
     
     
     def dfs(self, root, results, path):
-        if not root.left and not root.right:
+        if not root.left and not root.right:    # 不能if not root为空return来判断，因为当前节点返回取决于下方节点
             results.append('->'.join(path))
             return
         

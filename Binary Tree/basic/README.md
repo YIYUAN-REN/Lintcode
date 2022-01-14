@@ -1,5 +1,5 @@
 # Basic
-- 最小子树 [Minimum Subtree](https://www.lintcode.com/problem/596/)   
+- 最小和的子树 [Minimum Subtree](https://www.lintcode.com/problem/596/)   
 - 二叉树所有路径(根到叶) [Binary Tree Paths](https://www.lintcode.com/problem/480/)   
 - 最近公共祖先(节点存在) [Lowest Common Ancestor of a Binary Search Tree](https://www.lintcode.com/problem/88/)   
 - 最近公共祖先(父指针) [Lowest Common Ancestor II](https://www.lintcode.com/problem/474/)   

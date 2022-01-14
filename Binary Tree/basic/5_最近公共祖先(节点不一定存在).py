@@ -10,26 +10,39 @@ recursive：若左右子树都有p、q，则返回root；若只有左子树有�
 Definition of TreeNode:
 class TreeNode:
     def __init__(self, val):
-        self.val = val
-        self.left, self.right = None, None
+        this.val = val
+        this.left, this.right = None, None
 """
+
 
 class Solution:
     """
-    @param root: root of the tree
-    @param p: the node p
-    @param q: the node q
-    @return: find the LCA of p and q
+    @param: root: The root of the binary tree.
+    @param: A: A TreeNode
+    @param: B: A TreeNode
+    @return: Return the LCA of the two nodes.
     """
-    def lowestCommonAncestor(self, root, p, q):
+    def lowestCommonAncestor3(self, root, A, B):
         # write your code here
+        result = self.lca(root, A, B)
+        if not result:
+            return None
+        if result == A:
+            return A if self.lca(root, B, B) else None
+        if result == B:
+            return B if self.lca(root, A, A) else None
+        return result
+    
+    
+    def lca(self, root, A, B):
         if not root:
             return None
-        if root == p or root == q:
+        if root == A or root == B:
             return root
         
-        left = self.lowestCommonAncestor(root.left, p, q)
-        right = self.lowestCommonAncestor(root.right, p, q)
+        left = self.lca(root.left, A, B)
+        right = self.lca(root.right, A, B)
+        
         if left and right:
             return root
         if left:

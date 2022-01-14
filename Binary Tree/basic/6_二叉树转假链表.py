@@ -3,7 +3,9 @@
 """
 递归
 base case: 若root为空，return
-recursive: root.left连空，root.right连左子树头，左子树尾.right连root.right
+recursive: 
+1. 找到left_last和right_last
+2. root.left连空，root.right连root.left，left_last.right连root.right，返回当前树最后1个节点
 """
 
 """
@@ -22,19 +24,14 @@ class Solution:
     def flatten(self, root):
         # write your code here
         if not root:
-            return None
+            return
         
-        left = self.flatten(root.left)
-        right = self.flatten(root.right)
-        
-        if left:
-            # 连接left_last和root.right
-            left_last = left
-            while left_last.right:
-                left_last = left_last.right
+        left_last = self.flatten(root.left)
+        right_last = self.flatten(root.right)
+
+        if left_last:
             left_last.right = root.right
-            
+            root.right = root.left
             root.left = None
-            root.right = left
         
-        return root
+        return right_last or left_last or root
