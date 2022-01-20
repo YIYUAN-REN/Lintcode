@@ -1,7 +1,7 @@
 ﻿# Kth Smallest Element in a BST
 
-# 递归方法1: 空间O(1)
 """
+递归方法1: 空间O(1)
 思路：中序遍历，返回第k个元素
 """
 
@@ -42,7 +42,9 @@ class Solution:
         self.inorder(root.right, k)
 
 
-# 递归方法2: 空间O(k)
+"""
+递归方法2: 空间O(k)
+"""
 
 """
 Definition of TreeNode:
@@ -74,8 +76,8 @@ class Solution:
         self.traversal(root.right, inorder, k)
 
 
-# 非递归方法 - BST迭代器
 """
+非递归方法 - BST迭代器
 思路：stack表示当前节点一路向西的结果，模拟系统运行
 """
 

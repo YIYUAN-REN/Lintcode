@@ -1,7 +1,7 @@
 ﻿# Closest Binary Search Tree Value
 
-# 方法1
 """
+方法1
 思路：不断收拢上下边界
 """
 
